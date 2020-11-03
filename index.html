@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+<!-- Meta - caracteres necesarios (meta tags). -->
+<meta charset="utf-8">
+<!-- Meta - caracteres para que la página se muestre correctamente en dispositivos inteligentes. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Fuente de letra personalizada. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko">
+<!-- Bootstrap, 'en línea' y, estilios propios. -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="estilo_personalizado.css">
+<!-- Archivos, Javascript necesarios. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+
+<!-- Título de la página. -->
+<title>¡Desafío Bebras! - Certificados para DOCENTES</title>
+
+</head>
+
+<body style="font-family: 'Amiko', sans-serif;" class="bg-light" >
+
+<div class="container mt-3 text-justify"> <div class="row">
+
+<div class="col-12 p-2 border rounded shadow-sm color_primario Trnsp"> <center>
+
+<div class="m-2" name="textoEjemplo">
+Ingresa aquí tu documento de identidad en <strong>CREA</strong>: </div>
+
+<div class="m-2" name="cuadroDeTexto">
+<input type="text" id="documento" name="documento" class="text-center text-primary font-weight-bold" required placeholder="Ej. 12345678"> </div>
+
+<div class="m-2" name="botonComando">
+<input type="submit" id="vDocumento" name="vDocumento" 
+class="btn btn-outline-dark" value="¡Validar documento!"> </div>
+</center> </div>
+
+<div class="col-12 p-2 border rounded shadow-sm color_primario Trnsp">
+<div id="resultados">La información relativa, aparecerá aquí…</div> </div>
+
+</div>
+<script type="text/javascript" src="funcionalidades.js" ></script>
+
+</body> </html>

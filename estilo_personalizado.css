@@ -1,0 +1,18 @@
+body {
+font-family: 'Amiko', sans-serif;
+font-size: 14px!important;
+background-image: url(imagen_fondo.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.color_primario { background-color: #F0F0F0; }
+.color_secundario { background-color: #F3F3F3; }
+
+.color_primario:hover { background-color: #ECE3C0; }
+.color_secundario:hover { background-color: #F6F6A9; }
+
+.Trnsp { filter:alpha(opacity=85); opacity:0.85; }
+
+.imagenEfecto:hover {filter: saturate(180%);}
