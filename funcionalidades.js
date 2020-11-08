@@ -32,11 +32,11 @@ function validarDocumento () {
   if (datos.feed.openSearch$totalResults.$t != '0') {
   var i = datos.feed.entry.length - 1;
   while (i >= 0) {
-  if (datos.feed.entry[i]["gsx$céduladeidentidad"].$t == $("#documento").val()) {
+  if (datos.feed.entry[i]["gsx$documento"].$t == $("#documento").val()) {
    validadorDeConsulta = 1;
    $("#resultados").html(
    '<div class="text-center color_primario Trnsp"><li class ="list-group-item shadow-sm"> <b>Nombre del participante: </b>' + datos.feed.entry[i]["gsx$nombrecompleto"].$t +
-   ' (<b>Doc. <i class="text-danger">' + datos.feed.entry[i]["gsx$céduladeidentidad"].$t + "</b></i>)" +
+   ' (<b>Doc. <i class="text-danger">' + datos.feed.entry[i]["gsx$documento"].$t + "</b></i>)" +
    '<li class ="list-group-item shadow-sm text-center">' +
    '<a href=' + datos.feed.entry[i]["gsx$mergeddocurl-generadorprimero"].$t + ' target="_blank"><strong>¡CLIC AQUÍ PARA DESCARGAR!</strong></a>' + '</li></div>');
    i = 0; }
